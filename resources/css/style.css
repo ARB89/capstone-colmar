@@ -7,6 +7,10 @@ body{
   padding: 0;
   line-height: 1.4;
 }
+.contenedor{
+  margin: 0 1rem;
+
+}
 .container{
   display: flex;
   width: 100%;
@@ -34,48 +38,57 @@ display: none;
 .main-container{
   display: flex;
   width: 100%;
-  height: 35rem;
   background-color: #EBEDEF;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 1rem 2rem;
 }
-.main-container article{
+
+.main-banner{
+  width: 100%;
   display: flex;
   justify-content: center;
-}
-
-article .main-banner{
-  margin: 2rem 1.5rem;
+  align-content: center;
 
 }
  .main-banner img{
   width: 60%;
   padding: 2rem 1.5rem;
 }
-article .texto{
+.texto{
+  display: flex;
   width: 40%;
+
 }
 
- article .texto h1{
+.texto h1{
   font-size: 2rem;
   font-family: "Hevetica",serif;
   color:black;
-  margin: 10rem 0 0rem 0rem;
+align-self: center;
 }
-article .texto p{
-
+.texto p{
+align-self: center;
 }
 
-article .boton{
-margin-top: 8rem;
-padding: 0.5rem auto;
-}
-article .boton span{
-
+.boton span{
   color:white;
   margin: 1.5rem 0;
-
   background: black;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+.flex-container{
+  display: flex;
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+.imagenes{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
