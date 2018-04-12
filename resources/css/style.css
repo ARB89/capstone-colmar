@@ -54,6 +54,7 @@ display: none;
  .main-banner img{
   width: 60%;
   padding: 2rem 1.5rem;
+  float: left;
 }
 .texto{
   display: flex;
@@ -65,10 +66,9 @@ display: none;
   font-size: 2rem;
   font-family: "Hevetica",serif;
   color:black;
-align-self: center;
 }
 .texto p{
-align-self: center;
+
 }
 
 .boton span{
@@ -85,7 +85,18 @@ align-self: center;
 .flex-container{
   display: flex;
   width: 60%;
+  height: 20rem;
   margin: 2rem 1.5rem;
+}
+.flex-container h2{
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.flex-container p{
+  width: 100%;
+  padding: 1rem;
 }
 .flex-container img {
   width: 60%;
@@ -94,11 +105,36 @@ align-self: center;
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-left: 15rem;
 }
 .imagen img{
-  width: 40%;
+  width: 35%;
   height: auto;
+  float: left;
+}
+.imagen h2{
+
 }
 .tres{
   background-color: #EBEDEF;
+}
+.main-dos{
+  display: flex;
+  background-color: #EBEDEF;
+  width: 100%;
+  height:auto;
+  margin: 2rem auto;
+}
+.fotos{
+  display:block;
+  flex-direction: row;
+  height: auto;
+  margin: 2rem 4.5rem;
+}
+.fotos img{
+  padding: 1rem 2rem;
+}
+.foto img{
+  display: block;
+  padding: 1rem 2rem;
 }
