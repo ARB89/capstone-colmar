@@ -87,8 +87,18 @@ align-self: center;
   width: 60%;
   margin: 2rem 1.5rem;
 }
+.flex-container img {
+  width: 60%;
+}
 .imagenes{
   display: flex;
   flex-direction: column;
   width: 40%;
+}
+.imagen img{
+  width: 40%;
+  height: auto;
+}
+.tres{
+  background-color: #EBEDEF;
 }
