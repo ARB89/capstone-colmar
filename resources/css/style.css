@@ -59,6 +59,9 @@ display: none;
 .texto{
   display: flex;
   width: 40%;
+  position: relative;
+  top: 16rem;
+  right: 16rem;
 
 }
 
@@ -86,7 +89,7 @@ display: none;
   display: flex;
   width: 60%;
   height: 20rem;
-  margin: 2rem 1.5rem;
+  margin: 2rem 1rem;
 }
 .flex-container h2{
   width: 100%;
@@ -126,15 +129,40 @@ display: none;
   margin: 2rem auto;
 }
 .fotos{
-  display:block;
-  flex-direction: row;
-  height: auto;
+  display:inline-flex;
+  position: relative;
+  justify-content: center;
+  height: 80rem;
   margin: 2rem 4.5rem;
+  overflow: hidden;
 }
 .fotos img{
-  padding: 1rem 2rem;
+  height: auto;
+  padding-left: 2rem;
 }
 .foto img{
-  display: block;
+  display: inline-flex;
   padding: 1rem 2rem;
+}
+.main-tres{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.flex-video{
+  display:flex;
+  width: 100%;
+  margin: 2rem 1.5rem;
+}
+.flex-thesis{
+  display:flex;
+  flex-direction: column;
+  width: 40%;
+}
+.thesis img{
+  width: 65%;
+  padding: 1rem;
+}
+.primero{
+  background-color: #EBEDEF;
 }
