@@ -67,12 +67,11 @@ display: none;
   padding: 2rem 1.5rem;
 }
 .informacion{
-  width: 40%;
-  display: flex;
-  float: left;
+   width: 40%;
+   display: flex;
 }
 .texto{
-  display: block;
+  display:block;
   position: relative;
   float: left;
   top: 6rem;
@@ -88,12 +87,17 @@ display: none;
  line-height: 1.1;
  color:#868B90;
 }
-.boton{
-  display: block;
-  border: 1px solid black;
-  background-color: #4F5050;
-  color:#EFF3F6;
-  margin: 0.5rem 0;
+.star{
+  display: inline;
+  position: relative;
+  top: 20rem;
+  right: 30rem;
+}
+.btn{
+   background-color: #4F5050;
+   color:#EFF3F6;
+   margin: 0.5rem 0;
+   display: inline-block;
 }
 
 /*--main uno--*/
@@ -225,25 +229,32 @@ padding: 1rem 1rem;
 /*--main two--*/
 
 .main-two{
-  display: flex;
-  width: 100%;
-  height: 35rem;
-  background-color: #F6F8FA
-  overflow: hidden;
-  margin: 2rem 0;
+   width: 100%;
+   display: flex;
+   height: 40rem;
 }
-
-.information-two video{
-  width: 60%;
+.nuevo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.titulo-one{
+  text-align: right;
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+ .information-two video{
+  width: 100%;
 }
 .flex-container-two{
-   display: block;
-   width: 100%;
+   width: 60%;
    margin: 2rem 1rem;
 }
 .keep-two{
    padding: 2rem 0 1.5rem 0;
-   width: 60%;
+   width: 100%;
 }
 .keep-two h6{
   font-size: 1.5rem;
@@ -257,28 +268,82 @@ padding: 1rem 1rem;
   margin-bottom: 2rem;
 }
 
+/*--main-two imagenes--*/
+
+.imagenes-two{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 8rem;
+}
+.imagen-two{
+  width: 65%;
+}
+.imagen-one{
+  width: 65%;
+  background-color: #BDC1C4;
+}
+.imagen-one img{
+  width: 35%;
+  padding: 1rem;
+  height: auto;
+  float: left;
+}
+
+.imagen-two img{
+  width: 35%;
+  padding: 1rem;
+  height: auto;
+  float: left;
+}
+.imagen-one h4{
+text-align: left;
+font-size: 1rem;
+font-weight: bold;
+color: #060708;
+padding: 2rem 0;
+}
+.imagen-one p{
+text-align: left;
+font-size: 0.8rem;
+color: #868B90;
+line-height: 1.2;
+}
+.imagen-two h4{
+text-align: left;
+font-size: 1rem;
+font-weight: bold;
+color: #060708;
+padding: 2rem 0;
+}
+.imagen-two p{
+text-align: left;
+font-size: 0.8rem;
+color: #868B90;
+}
+
 
 /*--footer--*/
 .todo{
    display: flex;
-   margin-bottom: 3rem;
-   flex-direction: row;
+   margin: 2rem 0;
 }
 .pie-pagina{
   width: 100%;
   display: flex;
   color: #868B90;
-  height: auto;
-  margin-right: 2rem;
+  height: 4rem;
+  margin-left: 1.5rem;
 }
 .pie{
-  padding-right: 2rem;
+  padding: 1rem 0;
 }
+
 .pagina{
   display:flex;
 }
 .ultimo{
   text-align: left;
   color: #868B90;
-  padding-right: 0.5rem;
+  padding: 1rem 0.5rem 0 0;
 }
