@@ -2,11 +2,9 @@ html{
   font-size: 16px;
   font-family: "Helvetica", serif;
   max-width: 1240px;
+  line-height: 1.4;
 }
-body{
-   margin: 0 auto;
-   line-height: 1.4;
-}
+
  /*--header --*/
 
 .container{
@@ -14,7 +12,7 @@ body{
   width: 100%;
   max-width: 1240px;
   height: 4rem;
-  background: white;
+  background-color: #FEFFFF;
   align-items: center;
   justify-content: space-between;
   margin-top: 0;
@@ -40,21 +38,50 @@ height: 2rem;
 margin-left: 1.5rem;
 }
 .gris{
-   color: #EBEDEF;
+   color: #C4C8CA;
 }
  .mobil{
 display: none;
 }
 
+@media only screen and (max-width: 450px) {
+    .container{
+      display: flex;
+      width: 100%;
+      height: 4rem;
+      background-color: #FEFFFF;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.8rem solid white;
+      position: fixed;
+      z-index: 100;
+  }
+
+   .menu{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .mobil{
+    width: 100%;
+    display: inline;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+
+
+
 /*--main-container--*/
 
 .main-container{
-  display: flex;
-  width: 100%;
-  max-width: 1240px;
-  height: 30rem;
-  background-color: #EBEDEF;
-  overflow: hidden;
+   display: flex;
+   width: 100%;
+   background-color: #EBEDEF;
+   overflow: hidden;
+   margin-bottom: 5rem;
 }
 
 .main-banner{
@@ -71,14 +98,14 @@ display: none;
    width: 40%;
    display: flex;
    flex-direction: column;
+   margin-right: 8rem;
    justify-content: center;
-   margin-right: 5rem;
 }
 .texto{
   display:block;
 }
 .texto h1{
- font-size: 1.5rem;
+ font-size: 2.5rem;
  color:#060708;
 }
 .texto p{
@@ -94,11 +121,67 @@ display: none;
    color:#EFF3F6;
    margin: 0.5rem 0;
    display: inline-block;
-   padding: 0.4rem 5rem;
+   padding: 0.5rem 6rem;
 }
-.btn:hover{
-   padding: 1rem 8rem;
+
+
+@media only screen and (max-width: 450px) {
+.main-container{
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
+  .main-banner{
+     display: inline-flex;
+     width: 90%;
+     margin: 0;
+  }
+.banner{
+    display:flex;
+    margin: 0;
+  }
+  .banner img{
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+.informacion{
+  display: inline;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+.texto{
+  display: block;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.texto h1{
+  font-size: 1.5rem;
+  margin-left: 6rem;
+  padding-bottom: 1rem;
+}
+.texto p{
+  font-size: 1.5rem;
+  margin-left: 6rem;
+}
+.star{
+  display: block;
+  width:100%;
+ }
+ .btn{
+   font-size: 1.5rem;
+   margin-left: 6rem;
+   background-color: #D6DBDF;
+   color:#FBFBFC;
+
+ }
+}
+
+
 
 /*--main uno--*/
 
@@ -170,7 +253,36 @@ padding: 1rem 1rem;
 .azul{
   color:#83BFFC;
 }
+
+@media only screen and (max-width: 450px) {
+
+
+.flex-container{
+  display: none;
+}
+
+.imagenes{
+  width: 100%;
+  margin: 1rem 1rem 2rem 1rem;
+  justify-content: center;
+}
+.imagen{
+  padding-top: 4rem;
+}
+.imagen img{
+  width: 100%;
+}
+
+.tres{
+  background-color: white;
+}
+
+}
+
+
 /*--trabajos--*/
+
+
  .main-dos{
    background-color: #EBEDEF;
    width: 100%;
@@ -226,6 +338,51 @@ padding: 1rem 1rem;
 }
 
 
+
+@media only screen and (max-width: 450px) {
+.main-dos{
+  background-color: #FAFCFD;
+}
+
+.contenedor-trabajo{
+  background-color: #FAFCFD;
+  display: flex;
+  width: 80%;
+}
+.foto{
+  display: none;
+}
+.categoria{
+  display: none;
+}
+.fin{
+  display: none;
+}
+.trabajo{
+  display: block;
+  flex-direction: column;
+}
+
+.descripcion{
+  display: block;
+  width: 90%;
+}
+
+
+.nombre{
+  display: block;
+  width: 100%;
+  padding: 1rem 1rem 2rem 0;
+  background: #D6DBDF;
+  border: 2rem solid #D6DBDF;
+}
+
+
+
+
+}
+
+
 /*--main two--*/
 
 .main-two{
@@ -267,6 +424,27 @@ padding: 1rem 1rem;
   color:#868B90;
   margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 480px) {
+
+  .keep-two{
+    display: none;
+  }
+  .imagenes-two{
+    display: none;
+  }
+  .information-two video{
+    width: 100%;
+  }
+  .imagen-one{
+    display: none;
+  }
+  .imagen-two{
+    display: none;
+  }
+}
+
+
 
 /*--main-two imagenes--*/
 
@@ -346,4 +524,11 @@ color: #868B90;
   text-align: left;
   color: #868B90;
   padding: 1rem 0.5rem 0 0;
+}
+@media only screen and(max-width:450px){
+
+.pagina .ultimo{
+  display: none;
+}
+
 }
